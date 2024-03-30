@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="About Me">
+		<meta name="keywords" content="Hunter, Chrisman, chrisman.xyz">
+		<title>About Me | kaileechrisman.com</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/x-icon" href="HC.ico?">
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="#home">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Other Sites
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="https://www.kaileechrisman.com/about/" target="_blank">About Me</a>
+				<a href="https://www.kaileechrisman.com/resume/" target="_blank">Resume</a>
+				</div>
+			</div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<div class="about-section">
+			<h1>Home</h1>
+			<p>Welcome to my about page!</p>
+		</div>
+		<h2 style="text-align:center">About Me</h2>
+		<div class="row">
+			<div class="column">
+				<div class="card">
+					<center>
+						<img src="KaileeMicrophone.jpg" alt="Kailee in the RGBX Studio with the microphone." style="width:50%">
+					</center>
+					<div class="container">
+						<h2 style="text-align:center">Kailee Chrisman</h2>
+						<p class="title">[One liner]</p>
+						<p>[Insert description]</p>
+						<p>Email: [email]</p>
+						<p><button class="button">Contact</button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills Section -->
+		<div class="skills-section">
+			<h2>My Skills</h2>
+			<div class="skill">
+				<div class="skill-name">[Skill]</div>
+				<div class="skill-bar">
+					<div class="skill-per" style="width: 90%;"></div>
+				</div>
+			</div>
+			<!-- Add more skills here -->
+		</div>
+		
+		<!-- Light/Dark Mode Toggle -->
+		<div class="theme-switch-wrapper">
+			<label class="theme-switch" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				<div class="slider round"></div>
+			</label>
+			<em>Enable Dark Mode!</em>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p>Thanks for viewing the site!</p>
+			</div>
+		</footer>
+	</body>
+</html>
