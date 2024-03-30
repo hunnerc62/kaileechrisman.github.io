@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume | kaileechrisman.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../HC.ico?">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://www.kaileechrisman.com/" target="_blank">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Other Sites
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://www.kaileechrisman.com/about/" target="_blank">About Me</a>
+			        	<a href="https://www.kaileechrisman.com/resume/" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Content Sections Here (Professional Summary, Experience, etc.) -->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"
+        style="display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; border: none; outline: none; background-color: red; color: white; cursor: pointer; padding: 15px; border-radius: 10px; font-size: 18px;">Top</button>
+    
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+    <div class="about-section">
+        <h1>Resume</h1>
+        <p>Welcome to my resume!</p>
+    </div>
+
+    <div class="profile-image">
+        <img src="KaileeYellowSundress.jpeg" alt="Kailee Chrisman" style="width:100%;max-width:300px;height:auto;">
+    </div>
+
+<section class="resume-section">
+    <h2>Professional Summary</h2>
+    <p>[Summary 1]</p>
+    <p>[Summary 2]</p>
+    <p>[Summary 3]</p>
+</section>
+    <section class="resume-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>Leadership & Team Coordination</div>
+            <div>Strategic Thinking & Decision-Making</div>
+            <div>Critical Thinking & Problem Solving</div>
+            <div>Customer Relationship Management (CRM)</div>
+            <div>Coaching & Mentoring</div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+
+    <section class="resume-section">
+        <h2>Experience</h2>
+    
+        <div class="experience-item">
+            <h3>[Job Title]</h3>
+            <p>[Company], [Date], [City, State]</p>
+            <ul>
+                <li>[List item 1]</li>
+                <li>[List item 2]</li>
+                <li>[List item 3]</li>
+            </ul>
+        </div>
+    <section class="resume-section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Arts - BA, English</h3>
+            <p>University of Wisconsin-Green Bay, [Date]</p>
+            <ul>
+                <li>S[List item 1]</li>
+        </div>
+    
+        <div class="education-item">
+            <h3>High School Diploma</h3>
+            <p>Pulaski High School, Sep 2014 - Jun 2018</p>
+            <ul>
+                <li>[List itme 1]</li>
+        </div>
+    </section>
+
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/kailee-chrisman-68a359185" target="_blank" title="LinkedIn">
+            <i class="fa fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://profile.indeed.com/p/kaileek-xk1akfd" target="_blank" title="Indeed">
+            <i class="fa fa-briefcase"></i> Indeed
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Thanks for viewing my resume!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
